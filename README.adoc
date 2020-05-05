@@ -6,6 +6,14 @@ par Florent Dupont
 :data-uri:
 :icons: font
 
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
 
 
 == Example de doc en Asciidoc !!
@@ -89,3 +97,7 @@ Sous VSCode :
 * Ajouter l'extension Asciidoc
 * Pour activer la génération des diagrammes, dans les paramètres, Settings > Extensions > Asciidoc > cocher `use_kroki`.
 * Installer https://wkhtmltopdf.org/downloads.html
+
+
+Pour la prise en compte dans Github, voir ce lien https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74
+
