@@ -21,7 +21,9 @@ endif::[]
 
 Here is my preamble paragraph, but I could really place the TOC anywhere! Lorem ipsum foo bar baz.
 
-Attention, le rendu est pas pareil entre Github et Gitlab et en local !! Notamment pour les diagrammes.
+Attention, le rendu est pas pareil entre Github et Gitlab et en local !! Notamment pour les diagrammes.+
+
+Mais nous l'idée c'est qu'on exporte dse pages statiques ou qu'on en fasse des PDF qui seront plus facile à exporter que le wiki.
 
 toc::[]
 
