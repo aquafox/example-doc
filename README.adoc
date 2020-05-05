@@ -1,0 +1,91 @@
+= Exemple de doc
+par Florent Dupont
+:toc:
+:source-highlighter: highlightjs
+:imagesdir: ./assets
+:data-uri:
+:icons: font
+
+
+
+== Example de doc en Asciidoc !!
+
+=== sous-sous menu
+
+
+[red]#texte en rouge# +
+[red]*texte en rouge et en gras* +
+#texte emphasé#
+
+[source,java]
+-------------------
+int toto = 0; //<1>
+int titi = "blabla"; // <2>
+-------------------
+<1> on peut annoter le code, c'est cool
+<2> coloration syntaxique de Java
+
+
+
+
+[TIP] 
+exemple d'astuce
+
+[NOTE]
+===========
+Autre exemple de bloc info
+===========
+
+[WARNING]
+.Attention
+===========
+c'est chaud
+===========
+
+Des diagrammes avec plantuml en veux tu en voilà !
+
+[plantuml,intrication,svg,role=deployment]
+....
+skinparam monochrome false
+skinparam ranksep 20
+skinparam dpi 150
+skinparam arrowThickness 0.7
+skinparam packageTitleAlignment left
+skinparam usecaseBorderThickness 0.4
+skinparam defaultFontSize 12
+skinparam rectangleBorderThickness 1
+
+rectangle API {
+    rectangle controller as controller #ad7fa8
+}
+rectangle Service {
+    rectangle facade #729fcf
+    rectangle mapper #73d216
+    rectangle service
+    rectangle "autres services..." as other 
+}
+
+rectangle "Repository" {
+    rectangle repository #silver
+    rectangle "autres repositoryies" as other_repo #silver
+   
+}
+
+User -> controller
+
+controller -> facade
+facade -> mapper
+facade --> service
+service -> repository
+service --> other
+service --> other_repo
+....
+
+
+== Contributing
+
+Sous VSCode : 
+
+* Ajouter l'extension Asciidoc
+* Pour activer la génération des diagrammes, dans les paramètres, Settings > Extensions > Asciidoc > cocher `use_kroki`.
+* Installer https://wkhtmltopdf.org/downloads.html
