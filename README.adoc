@@ -1,10 +1,13 @@
 = Exemple de doc
 par Florent Dupont
+ifndef::env-github[]
 :toc:
 :source-highlighter: highlightjs
 :imagesdir: ./assets
 :data-uri:
 :icons: font
+:toc-placement!:
+endif::[]
 
 ifdef::env-github[]
 :tip-caption: :bulb:
@@ -13,18 +16,18 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 :toc:
-:toc-placement!:
 :icons: font
 endif::[]
 
 Here is my preamble paragraph, but I could really place the TOC anywhere! Lorem ipsum foo bar baz.
+
+Attention, le rendu est pas pareil entre Github et Gitlab et en local !! Notamment pour les diagrammes.
 
 toc::[]
 
 == Example de doc en Asciidoc !!
 
 === sous-sous menu
-
 
 [red]#texte en rouge# +
 [red]*texte en rouge et en gras* +
@@ -55,7 +58,7 @@ Autre exemple de bloc info
 c'est chaud
 ===========
 
-Des diagrammes avec plantuml en veux tu en voilà !
+Des diagrammes avec plantuml en veux tu en voilà ! mais ne marche pas sous Github 😞
 
 [plantuml,intrication,svg,role=deployment]
 ....
