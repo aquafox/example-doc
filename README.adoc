@@ -12,9 +12,13 @@ ifdef::env-github[]
 :important-caption: :heavy_exclamation_mark:
 :caution-caption: :fire:
 :warning-caption: :warning:
+:toc:
+:toc-placement!:
 endif::[]
 
+Here is my preamble paragraph, but I could really place the TOC anywhere! Lorem ipsum foo bar baz.
 
+toc::[]
 
 == Example de doc en Asciidoc !!
 
@@ -30,7 +34,7 @@ endif::[]
 int toto = 0; //<1>
 int titi = "blabla"; // <2>
 -------------------
-<1> on peut annoter le code, c'est cool
+<1> on peut annoter le code avec des callouts, c'est cool
 <2> coloration syntaxique de Java
 
 
